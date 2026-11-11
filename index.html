@@ -395,6 +395,19 @@ footer .soc svg{width:18px;height:18px}
 .tcard .ft{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11.5px;color:var(--taupe)}
 .tcard .ft .mk{width:22px;height:22px;opacity:.8}
 
+
+.rate{margin:56px auto 0;width:min(1180px,92vw);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:26px 30px;border-radius:24px;background:#fff;border:1px solid rgba(168,100,74,.2);box-shadow:0 24px 50px -30px rgba(74,54,40,.4)}
+.rate .l{display:flex;align-items:center;gap:18px}
+.rate .g{width:52px;height:52px;border-radius:16px;background:#f6efe8;display:grid;place-items:center;flex:none}
+.rate .g svg{width:26px;height:26px}
+.rate b{display:block;font-family:var(--serif);font-size:26px;font-weight:500;line-height:1.1;color:var(--esp)}
+.rate span{font-size:13.5px;color:var(--taupe)}
+.rate .stars{display:flex;gap:3px;margin-top:6px}
+.rate .stars i{width:16px;height:16px;background:linear-gradient(135deg,#d9a98f,#a8644a);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);opacity:.25;transition:opacity .4s,transform .4s var(--ease)}
+.rate.on .stars i{opacity:1;transform:scale(1)}
+.rate.on .stars i:nth-child(2){transition-delay:.12s}.rate.on .stars i:nth-child(3){transition-delay:.24s}.rate.on .stars i:nth-child(4){transition-delay:.36s}.rate.on .stars i:nth-child(5){transition-delay:.48s}
+@media (max-width:620px){.rate{padding:22px}.rate .btn{width:100%;justify-content:center}.rate b{font-size:22px}}
+
 @media (max-width:980px){
  .links,nav .in>.btn{display:none}.burger{display:grid}
  .hero .wrap{grid-template-columns:1fr;text-align:left}
@@ -608,6 +621,10 @@ footer .soc svg{width:18px;height:18px}
   </figure>
  </div>
  <div class="lanes rv"><div class="lane" id="lane1"></div><div class="lane rev" id="lane2"></div></div>
+ <div class="rate rv" id="rate">
+  <div class="l"><div class="g"><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.6 13.2l7.9 6.2C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.6 5.9c4.4-4.1 6.7-10.1 6.7-17.3z"/><path fill="#FBBC05" d="M10.5 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.2C1 16.5 0 20.1 0 24s1 7.5 2.6 10.8l7.9-6.2z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.6-5.9c-2.1 1.4-4.9 2.3-8.3 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.2C6.6 42.6 14.6 48 24 48z"/></svg></div><div><b>Já foi atendida pela Dra. Natália?</b><span>Sua avaliação no Google ajuda outras mulheres a encontrarem um cuidado de confiança.</span><div class="stars"><i></i><i></i><i></i><i></i><i></i></div></div></div>
+  <a class="btn btn-rose" href="https://share.google/bv8dvaWp94DUmZfzI" target="_blank" rel="noopener">Avaliar no Google ★</a>
+ </div>
 </section>
 <section class="sec" id="agenda">
  <div class="wrap">
